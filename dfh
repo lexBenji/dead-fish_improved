@@ -1,0 +1,36 @@
+#!/usr/bin/python3
+
+from sys import argv
+from math import isqrt,floor
+
+acu = 0
+file=""
+ln=0
+
+for pt,j in enumerate(argv):
+    if j.endswith(".dfh"):
+        file=argv[pt]
+
+with open(file) as rf:
+    rf=rf.read()
+    while ln < len(rf):
+        cur=rf[ln]
+        if cur == "i":
+            acu+=1
+        elif cur == "d":
+            acu-=1
+        elif cur == "s":
+            acu**=2
+        elif cur == "o":
+            print(acu)
+        elif cur == "O":
+            print(chr(acu),end="")
+        elif cur == "r":
+            acu = isqrt(acu)
+        elif cur == "c":
+            acu = 0
+        if acu >= 256 or acu <= -1:
+            acu = 0
+        if not isinstance(acu,int):
+            acu = floor(float(acu))
+        ln+=1

@@ -1,0 +1,2 @@
+start:
+	./dfh hello.dfh
