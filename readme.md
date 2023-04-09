@@ -5,8 +5,9 @@
 Type `git clone https://github.com/lexBenji/dead-fish_improved dfh` to clone.
 
 # About dead-fish improved
-accumulator can only be less than 256 and more than 0<br>
-non-whole number of accumulator is rounded down
+x is the current number
+x can only be less than 256 and more than 0<br>
+x cannot be a floating point number so x is rounded down
 |Instruction|Usage|
 |---|---|
 |i|increace accumulator|
