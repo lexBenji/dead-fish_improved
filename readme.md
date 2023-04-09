@@ -10,8 +10,10 @@ x can only be less than 256 and more than 0<br>
 x cannot be a floating point number so x is rounded down
 |Instruction|Usage|
 |---|---|
-|i|increace accumulator|
-|d|decrease accumulator|
-|s|square (^) accumulator|
-|r|square root accumulator|
-|c|clear accumulator|
+|i|increace x|
+|d|decrease x|
+|s|square (^) x|
+|r|square root x|
+|c|clear x|
+|o|prints value of x|
+|O|prints ascii character of x|
